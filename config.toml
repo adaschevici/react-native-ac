@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Workshop Website"
+title = "React Native Advanced"
 theme = "learn"
 
 [markup]
@@ -37,8 +37,8 @@ theme = "learn"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green", "orange".
   logotype = "react-native"
-  githublink = "https://github.com/adaschevici/react-advanced"
-  githubalias = "adaschevici/react-advanced"
+  githublink = "https://github.com/adaschevici/react-native-advanced"
+  githubalias = "adaschevici/react-native-advanced"
 
 [blackfriday]
 extensions = ["hardLineBreak"]
@@ -46,7 +46,7 @@ extensions = ["hardLineBreak"]
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/adaschevici/react-advanced"
+url = "https://github.com/adaschevici/react-native-advanced"
 weight = 10
 
 [[menu.shortcuts]]
