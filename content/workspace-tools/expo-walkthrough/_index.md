@@ -15,10 +15,18 @@ redeploying the bundle to the device. `expo` has gone a long way to allow the de
 it has gained so much popularity that it was incorporated in the [RN docs](https://reactnative.dev/docs/handling-text-input)
 for running interactive code and bootstraping applications.
 
-`expo-cli` and `create-react-native-app` are compatible with one another and migration between the two should be rather
+`expo-cli` and `react-native` cli are compatible with one another and migration between the two should be rather
 easy to do. Expo is the managed way of working with `react-native` applications.
 
 {{% notice note %}}
 In `react` you would create an app and if you require more specific library compatibility then you may choose to
-`eject`. There is a similar operation in `expo` and is called `eject` also.
+`eject`. There is a similar operation in `expo` and is called `eject` too. In `expo` when ejecting what happens is you
+exit into the [bare workflow](https://docs.expo.io/bare/exploring-bare-workflow/)
+{{% /notice %}}
+
+
+{{% notice info %}}
+`expo` has replaced the now deprecated `create-react-native-app`. There is a [glossary of
+terms](https://docs.expo.io/workflow/glossary-of-terms/#create-react-native-app) where you can find an up-to-date list
+of terms that you will encounter while working with `expo`
 {{% /notice %}}
