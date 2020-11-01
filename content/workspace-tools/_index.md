@@ -12,7 +12,7 @@ draft = false
 
 There are multiple approaches when working with a client that requests a native app. Usually we would not want to
 reinvent and rebuild the entire codebase from scratch, even though sometimes it may be appealing. Our duty as software
-delopers is to be result driven but at the same time lazy.
+developers is to be result driven but at the same time lazy.
 
 The best choice as always depends on the situation. You may have an already established product that requires building a
 mobile client application, or you are starting from scratch. You may have a requirement for building both a mobile app and a
@@ -73,4 +73,4 @@ The approaches we came up with while investigating the ecosystem are:
 
 #### Cons:
 - some native features are notoriously difficult to handle (ie bluetooth)
-- whe working closely on native features you will need to dive into native code
+- when working closely on native features you will need to dive into native code
