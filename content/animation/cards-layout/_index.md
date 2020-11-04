@@ -2,7 +2,7 @@
 title = "Cards Layout"
 date = 2020-10-30T12:00:44+01:00
 weight = 1
-draft = true
+draft = false
 +++
 
 We will convert the list we've been working on previously to a tinder like swipe-right/-left style app. As you can
