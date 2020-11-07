@@ -51,10 +51,9 @@ export default ({ data }) => {
 }
 ```
 {{% notice note %}}
-Previously we have used `getTransformLayout()` to build the animation styles but the problem with `PanResponder` is that
-at this time it will not work with `useNativeDriver` so instead of `getTransformLayout` we will start using `getLayout`.
-There are a few cases when `Animated.event` will work with `panResponder` as a handler but when you want to apply
-multiple transforms.
+Previously we have used `getTranslateTransform()` to build the animation styles directly in the style prop. There is
+another method that allows us to retrieve transform styles that is `getLayout()`. This method will not work with
+`useNativeDriver: true` set.
 {{% /notice %}}
 
 What we can do now is drag the entire deck around the screen along the x and y axis.
@@ -79,8 +78,7 @@ const getCardStyle = (position) => {
     outputRange: ['-120deg', '0deg', '120deg'],
   })
   return {
-    ...position.getLayout(),
-    transform: [{ rotate }],
+    transform: [...position.getTranslateTransform(),{ rotate }],
   }
 }
 ...
@@ -99,6 +97,7 @@ shop, otherwise we want the card to spring back to its original state.
 const resetPosition = (position) => {
   Animated.spring(position, {
     toValue: { x: 0, y: 0 },
+    useNativeDriver: true
   }).start()
 }
 ```
@@ -121,4 +120,5 @@ The `SWIPE_THRESHOLD` is a constant that is 1/4 of the maximum of the interpolat
 - functions to force the completion to the left or right of the animation once we swipe past the `SWIPE_THRESHOLD`
 - a callback to make the next card in line swipeable once the card 'on top' is swiped either left or right
 
-Let's do this in the next section which is also an opportunity for few short stints of individual work.
+Let's do this in the next section which is also an opportunity for few short sprints of individual work improve
+our understanding the concepts we learned so far.
