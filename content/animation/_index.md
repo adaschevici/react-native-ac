@@ -2,6 +2,7 @@
 title = "Animation"
 date = 2020-10-30T11:04:19+01:00
 pre = "<b>3. </b>"
+weight = 3
 draft = false
 +++
 
