@@ -1,11 +1,11 @@
 +++
-title = "Unittesting"
+title = "Unit testing"
 date = 2020-11-16T16:07:50+01:00
 draft = false
 weight = 1
 +++
 
-Unittesting will be achieved through the same mechanisms we use in base react. We will use `jest` which is the most
+Unit testing will be achieved through the same mechanisms we use in base react. We will use `jest` which is the most
 popular testing runtime for react at the time of writing.
 
 A popular library that is picking up steam developed in line with the [`@testing-library/react`](https://testing-library.com/docs/react-testing-library/intro/). The library
@@ -24,7 +24,7 @@ The upside of snapshot testing is that it will allow you to spot any unexpected 
 for example if you change a leaf components' style you can see if it causes any other components to change, and figure
 out if there are unintended sideeffects.
 
-## Unittesting setup
+## Unit testing setup
 
 ```bash
 npm i -D jest-expo @testing-library/react-native
@@ -114,7 +114,7 @@ The `@testing-library` namespace contains multiple react testing utilities and t
 it is that you have all the react testing libraries in a single place. There are testing utilities for other frameworks,
 there is vue as well, but for our goals we will be focusing on `react-native`.
 
-For unittesting we also need to access values in the children of our component. Doing that will be a more robust
+For unit testing we also need to access values in the children of our component. Doing that will be a more robust
 approach than going directly for snapshots. A snapshot test will try to check every attribute of every sub-component and
 even if the the component only slightly changes...the test will still fail. While rapidly iterating this will be silly
 and will create quite  a bit of noise.
