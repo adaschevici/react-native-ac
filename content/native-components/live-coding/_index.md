@@ -18,7 +18,6 @@ I'm talking about you google.
 We will define a `(lat, long)` tuple to have a central location for fetching our brew fix in the morning,
 afternoon...oh well...coffee is a timeless treat
 
-
 {{< lazy-image image="coffee.gif" lightbox=false />}}
 
 ## We have an app started so let's fetch some data and show it in our app.
@@ -84,10 +83,13 @@ export default App
 We will want to display a list of coffeshops in the specified location, so we can choose or rate it. In earlier versions
 of `react-native` lists were rendered at the js layer so there were huge performance drawbacks but nowadays there are
 two types of [lists](https://reactnative.dev/docs/using-a-listview/) that are both linked into the native side and are performant enough to behave well in most cases. We
-will also add a [component library](https://reactnativeelements.com/) to use in order to have a bit fancier UI.
+will also add [react native elements](https://reactnativeelements.com/) component library to use in order to have a bit fancier UI.
+
+```bash
+npm install react-native-elements
+```
 
 Now that we configured our environment vars we should create an account for the yelp API. We will use it to fetch coffee
 roasters from the location. Nuff said though, let's dive into code.
 
 {{< lazy-image image="matrix_code.gif" lightbox=false />}}
-
