@@ -1,5 +1,5 @@
 +++
-title = "Self Improvement"
+title = "Individual Workout"
 date = 2020-10-29T19:34:03+01:00
 draft = false
 weight = 4
