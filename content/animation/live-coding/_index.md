@@ -109,7 +109,7 @@ We want to hook this into the `onPanResponderRelease` callback like so:
         if (gesture.dx > SWIPE_THRESHOLD) {
           forceSwipe(position, 'right')
         } else if (gesture.dx < -SWIPE_THRESHOLD) {
-          forceSwipeLeft(position, 'left')
+          forceSwipe(position, 'left')
         } else {
           resetPosition(position)
         }
