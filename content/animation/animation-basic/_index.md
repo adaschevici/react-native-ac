@@ -1,7 +1,7 @@
 +++
 title = "Animation Basic"
 date = 2020-11-01T10:38:51+01:00
-weight = 2
+weight = 1
 draft = false
 +++
 

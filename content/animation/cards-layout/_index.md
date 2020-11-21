@@ -1,7 +1,7 @@
 +++
 title = "Cards Layout"
 date = 2020-10-30T12:00:44+01:00
-weight = 1
+weight = 2
 draft = false
 +++
 
@@ -18,23 +18,30 @@ As a rule of thumb:
   animating a slide(left/right) and at the same time we have a rotating motion on the card when you swipe to the left or
   right
 
-
 Let's swap out and switch the list of items with `Card` components from the `react-native-elements` library. This will
 look more polished than the previous version and closer to the final designs.
 
 The basic gist of it will look something like this, our goal is to replace the list items with cards.
+
 ```js
 <Card>
   <Card.Title>HELLO WORLD</Card.Title>
-  <Card.Divider/>
-  <Card.Image source={require('../images/pic2.jpg')} />
-  <Text style={{marginBottom: 10}}>
-      The idea with React Native Elements is more about component structure than actual design.
+  <Card.Divider />
+  <Card.Image source={require("../images/pic2.jpg")} />
+  <Text style={{ marginBottom: 10 }}>
+    The idea with React Native Elements is more about component structure than
+    actual design.
   </Text>
   <Button
-    icon={<Icon name='code' color='#ffffff' />}
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    icon={<Icon name="code" color="#ffffff" />}
+    buttonStyle={{
+      borderRadius: 0,
+      marginLeft: 0,
+      marginRight: 0,
+      marginBottom: 0,
+    }}
+    title="VIEW NOW"
+  />
 </Card>
 ```
 
