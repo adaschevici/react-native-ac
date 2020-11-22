@@ -13,7 +13,7 @@ in that area.
 Let's create a developer account for the [yelp fusion api](https://www.yelp.com/fusion).
 The nice thing about the yelp API is that it has a pretty generous free tier
 and the real-time usage measuring is very transparent which saves you of any hidden costs, yes
-I'm talking about you google.
+I'm talking about you google. We will need to create a new test app and then we can get our API keys.
 
 We will define a `(lat, long)` tuple to have a central location for fetching our brew fix in the morning,
 afternoon...oh well...coffee is a timeless treat
