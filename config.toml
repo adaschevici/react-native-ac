@@ -46,7 +46,7 @@ extensions = ["hardLineBreak"]
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/adaschevici/coffebrewv"
+url = "https://github.com/adaschevici/coffebrew"
 weight = 10
 
 [[menu.shortcuts]]
