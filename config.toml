@@ -37,8 +37,8 @@ theme = "learn"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green", "orange".
   logotype = "react-native"
-  githublink = "https://github.com/adaschevici/react-native-advanced"
-  githubalias = "adaschevici/react-native-advanced"
+  githublink = "https://github.com/adaschevici/coffebrew"
+  githubalias = "adaschevici/coffebrew"
 
 [blackfriday]
 extensions = ["hardLineBreak"]
@@ -46,7 +46,7 @@ extensions = ["hardLineBreak"]
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/adaschevici/react-native-advanced"
+url = "https://github.com/adaschevici/coffebrewv"
 weight = 10
 
 [[menu.shortcuts]]
