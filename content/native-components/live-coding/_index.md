@@ -22,6 +22,14 @@ afternoon...oh well...coffee is a timeless treat
 
 ## We have an app started so let's fetch some data and show it in our app.
 
+First off once we get our yelp API key we want to try it out using a http client like [postman](https://www.postman.com/downloads/)
+The URL we want to make the request to is `https://api.yelp.com/v3/businesses/search?term=delis&latitude=37.786882&longitude=-122.399972`
+In order to be able to use the API we also want to add a header
+
+```json
+Authorization: Bearer <API_TOKEN>
+```
+
 While writing code, because you can't always rely on data fetching to work as intended we
 will sometimes want to use fake data so I would advise to install [faker](https://github.com/marak/Faker.js/)
 and use it to generate your fixtures in the apps you are developing.

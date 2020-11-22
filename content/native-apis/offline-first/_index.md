@@ -82,7 +82,7 @@ native but for the web there are more options that are more established such as 
 ...
 ```
 
-Individual workout:
+#### Individual workout:
 1) Hook the location into `redux`
 2) Add redux persist on location operations
 3) Can you think of any problems that could pop up if you use `redux-persist`? Hint(think about upgrades)
