@@ -13,7 +13,7 @@ in that area.
 Let's create a developer account for the [yelp fusion api](https://www.yelp.com/fusion).
 The nice thing about the yelp API is that it has a pretty generous free tier
 and the real-time usage measuring is very transparent which saves you of any hidden costs, yes
-I'm talking about you google.
+I'm talking about you google. We will need to create a new test app and then we can get our API keys.
 
 We will define a `(lat, long)` tuple to have a central location for fetching our brew fix in the morning,
 afternoon...oh well...coffee is a timeless treat
@@ -21,6 +21,14 @@ afternoon...oh well...coffee is a timeless treat
 {{< lazy-image image="coffee.gif" lightbox=false />}}
 
 ## We have an app started so let's fetch some data and show it in our app.
+
+First off once we get our yelp API key we want to try it out using a http client like [postman](https://www.postman.com/downloads/)
+The URL we want to make the request to is `https://api.yelp.com/v3/businesses/search?term=delis&latitude=37.786882&longitude=-122.399972`
+In order to be able to use the API we also want to add a header
+
+```json
+Authorization: Bearer <API_TOKEN>
+```
 
 While writing code, because you can't always rely on data fetching to work as intended we
 will sometimes want to use fake data so I would advise to install [faker](https://github.com/marak/Faker.js/)

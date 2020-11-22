@@ -1,7 +1,7 @@
 +++
 title = "Cards Layout"
 date = 2020-10-30T12:00:44+01:00
-weight = 2
+weight = 3
 draft = false
 +++
 
@@ -45,7 +45,9 @@ The basic gist of it will look something like this, our goal is to replace the l
 </Card>
 ```
 
-The resulting UI is a bit complex so we want to break it down into reusable functional components.
+The resulting UI is a bit complex so we want to break it down into reusable functional components. We want to create a
+file called `Deck.js` that will receive the data from the yelp API and this `Deck.js` will have a list of `CoffeeShop`
+components.
 
 We also want to pull in a review to add into the card text so that we get a feeling for what the place is like. The API
 endpoint we can fetch this from is [here](https://www.yelp.com/developers/documentation/v3/business_reviews). We will

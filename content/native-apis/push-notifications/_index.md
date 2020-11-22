@@ -120,3 +120,7 @@ export default () => {
 }
 {{</highlight>}}
 
+
+#### Pair Workout
+1) Gather in pairs and send  push notifications to each others app with a cool new coffeshop you have found on google
+maps.

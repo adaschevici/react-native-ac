@@ -77,7 +77,7 @@ dashboard.
 In any application we will be using a mixture of navigators, the way to compose them is by creating each of the
 navigators then nesting them. Let's look at how this will look in code.
 
-Individual workout
+#### Individual workout
 1) Experiment with icons from the font awesome package that is included in the `react-native-vector-icons`. For example
 you could use icons for ios from `Ionicons`
 2) Add 2 new screens that will be displayed instead of the `Deck` screen so that navigating will provide us with visual

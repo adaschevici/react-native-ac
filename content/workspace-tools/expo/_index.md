@@ -17,8 +17,8 @@ The way you can get started is by installing the `expo-cli`
 
 ```bash
 npm init -y # create an npm workspace
-npm i expo-cli
-npx expo-cli init coffeenut
+npm i -g expo-cli
+npx expo init coffeenut
 ```
 
 We also need to install the `expo-cli` in the created project folder as the cli interface will manage the local

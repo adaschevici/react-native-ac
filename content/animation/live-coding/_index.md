@@ -94,7 +94,7 @@ shop, otherwise we want the card to spring back to its original state.
 - function to make the card spring back into place:
 ```js
 // Deck.js
-const resetPosition = (position) => {
+const resetPosition = () => {
   Animated.spring(position, {
     toValue: { x: 0, y: 0 },
     useNativeDriver: true
@@ -107,11 +107,11 @@ We want to hook this into the `onPanResponderRelease` callback like so:
 ...
       onPanResponderRelease: (event, gesture) => {
         if (gesture.dx > SWIPE_THRESHOLD) {
-          forceSwipe(position, 'right')
+          forceSwipe('right')
         } else if (gesture.dx < -SWIPE_THRESHOLD) {
-          forceSwipe(position, 'left')
+          forceSwipe('left')
         } else {
-          resetPosition(position)
+          resetPosition()
         }
       },
 ...
