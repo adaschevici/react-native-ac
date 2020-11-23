@@ -100,7 +100,7 @@ view which can be however customized you want
       </MapView>
 ```
 
-Individual workout:
+#### Individual workout:
 
 1) Add the rest of the pins to the map
 2) Add a custom component to display some extra information as a `Callout` for each pin
